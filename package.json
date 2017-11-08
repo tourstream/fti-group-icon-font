@@ -1,0 +1,35 @@
+{
+  "name": "fti-group-icon-font",
+  "description": "Icon font for projects of FTI Group",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "FTI",
+  "contributors": [
+    {
+      "name": "Enrico Hoffmann",
+      "email": "enrico.hoffmann@fti.de"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tourstream/fti-group-icon-font.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tourstream/fti-group-icon-font/issues"
+  },
+  "homepage": "https://github.com/tourstream/fti-group-icon-font#readme",
+  "engines": {
+    "node": ">= 8.6.0",
+    "npm": ">= 3.0.0",
+    "yarn": ">= 1.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "icon-font-generator": "^1.1.1"
+  },
+  "scripts": {
+    "build": "icon-font-generator src/*.svg -o dist/ -j false -n fti-group-icon-font -p fg",
+    "postversion": "git push && git push --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
