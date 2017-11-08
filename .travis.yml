@@ -10,3 +10,11 @@ cache:
   yarn: true
   directories:
      - ./node_modules
+
+#deploy:
+#  provider: npm
+#  email: npm-account@email.address
+#  api_key:
+#    secure: "...encrypted key..."
+#  on:
+#    tags: true
