@@ -69,9 +69,9 @@ Example: file name `hello-world.svg` and CSS usage `<i class="fg-hello-world"></
 
 ***
 
-[npm-version-image]: https://img.shields.io/npm/v/fti-group-icon-font.svg?style=flat-square
+[npm-version-image]: https://img.shields.io/npm/v/%40tourstream%2Ffti-group-icon-font.svg?style=flat-square
 [npm-version-url]: https://www.npmjs.com/package/@tourstream/fti-group-icon-font
-[npm-downloads-image]: https://img.shields.io/npm/dm/fti-group-icon-font.svg?style=flat-square
+[npm-downloads-image]: https://img.shields.io/npm/dm/%40tourstream%2Ffti-group-icon-font.svg?style=flat-square
 [npm-downloads-url]: https://www.npmjs.com/package/@tourstream/fti-group-icon-font
 
 [travis-image]: https://img.shields.io/travis/tourstream/fti-group-icon-font.svg?style=flat-square
