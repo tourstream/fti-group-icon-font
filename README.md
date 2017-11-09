@@ -24,10 +24,13 @@ If you want to use the npm package just install with [npm](https://www.npmjs.com
 ```sh
 $ npm install @tourstream/fti-group-icon-font --save
 ```
+
 or with [yarn](https://yarnpkg.com/lang/en/)
+
 ```sh
 $ yarn add @tourstream/fti-group-icon-font
 ```
+
 After this step you can use the sources as you like. They can be found in `./node_modules/@tourstream/fti-group-icon-font/dist`
 
 
@@ -50,8 +53,10 @@ The build server (travis) will now update the stuff around the CDN to the latest
 
 If everything looks good it would help when someone could tag a new version via the following command
 
-    npm version minor
-    
+```sh
+$ npm version minor
+```
+ 
 The build server (travis) will now update the stuff around the npm package to the tagged version automatically.
 
 
