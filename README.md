@@ -28,7 +28,7 @@ or with [yarn](https://yarnpkg.com/lang/en/)
 ```sh
 $ yarn add @tourstream/fti-group-icon-font
 ```
-After this you can use the sources as you like. They can be found in `./node_modules/@tourstream/fti-group-icon-font/dist`
+After this step you can use the sources as you like. They can be found in `./node_modules/@tourstream/fti-group-icon-font/dist`
 
 
 ### link the source - CDN
@@ -44,7 +44,7 @@ You can put the following snippet into the head of your HTML document ...
 
 * checkout/update repository
 * add SVG into folder `src`
-* commit
+* commit (incl. short meaningful message)
 
 The build server (travis) will now update the stuff around the CDN to the latest version automatically.
 
