@@ -48,9 +48,9 @@ Example: file name `hello-world.svg` and CSS usage `<i class="fg-hello-world"></
 [github-tag-url]: https://github.com/tourstream/fti-group-icon-font
 
 [npm-version-image]: https://img.shields.io/npm/v/fti-group-icon-font.svg?style=flat-square
-[npm-version-url]: https://www.npmjs.com/package/fti-group-icon-font
+[npm-version-url]: https://www.npmjs.com/package/@tourstream/fti-group-icon-font
 [npm-downloads-image]: https://img.shields.io/npm/dm/fti-group-icon-font.svg?style=flat-square
-[npm-downloads-url]: https://www.npmjs.com/package/fti-group-icon-font
+[npm-downloads-url]: https://www.npmjs.com/package/@tourstream/fti-group-icon-font
 
 [travis-image]: https://img.shields.io/travis/tourstream/fti-group-icon-font.svg?style=flat-square
 [travis-url]: https://travis-ci.org/tourstream/fti-group-icon-font
