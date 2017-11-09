@@ -10,29 +10,54 @@
 
 Icon font for projects of FTI Group.
 
+This [demo page](https://fgif.gcloud.fti-group.com/fti-group-icon-font.html) will show the latest version of this package.
+
 
 ## Usage
 
-... following lines are draftinger ...
+There are different ways to use this font ...
 
-* as npm lib
-* as CDN link: `https://fgif.gcloud.fti-group.com/fti-group-icon-font.css`
+### npm package
 
-This [page](https://fgif.gcloud.fti-group.com/fti-group-icon-font.html) will show the latest version of this package.
+If you want to use the npm package just install with [npm](https://www.npmjs.com/)
+                                                
+```sh
+$ npm install @tourstream/fti-group-icon-font --save
+```
+or with [yarn](https://yarnpkg.com/lang/en/)
+```sh
+$ yarn add @tourstream/fti-group-icon-font
+```
+After this you can use the sources as you like. They can be found in `./node_modules/@tourstream/fti-group-icon-font/dist`
 
 
-### Development
+### link the source - CDN
 
-... following lines are draftinger ...
+You can put the following snippet into the head of your HTML document ...
 
-* checkout/update repo
+    <link rel="stylesheet" href="https://fgif.gcloud.fti-group.com/fti-group-icon-font.css">
+
+... or something similar.
+
+
+## Development
+
+* checkout/update repository
 * add SVG into folder `src`
 * commit
 
-All next steps will be managed (build, (tag,) publish) by the build server (travis).
+The build server (travis) will now update the stuff around the CDN to the latest version automaticcally.
+
+If everything looks good it would help when someone could tag a new version via the following command
+
+    npm version minor
+    
+The build server (travis) will now update the stuff around the npm package to the tagged version automaticcally.
 
 
-#### Rules for SVG
+## Misc
+
+### Rules for SVG
 
 * file name: kebap-case
 * file name: letters only
@@ -52,7 +77,7 @@ Example: file name `hello-world.svg` and CSS usage `<i class="fg-hello-world"></
 [travis-image]: https://img.shields.io/travis/tourstream/fti-group-icon-font.svg?style=flat-square
 [travis-url]: https://travis-ci.org/tourstream/fti-group-icon-font
 
-[demo-image]: https://img.shields.io/badge/Demo-latest-%230099cc.svg
+[demo-image]: https://img.shields.io/badge/Demo-latest-%230099cc.svg?style=flat-square
 [demo-url]: https://fgif.gcloud.fti-group.com/fti-group-icon-font.html
 
 [license-image]: https://img.shields.io/github/license/tourstream/fti-group-icon-font.svg?style=flat-square
