@@ -2,8 +2,6 @@ sudo: false
 dist: trusty
 language: node_js
 node_js:
-- "6"
-- "7"
 - "8"
 
 cache:
@@ -15,29 +13,39 @@ script:
   - echo "build icon font ..."
   - npm run build
 
-after_success:
-  - npm version patch
-
 #deploy:
 #  - provider: npm
-#    email: npm-account@email.address
+#    email: $NPM_EMAIL
 #    api_key:
-#      secure: "...encrypted key..."
+#      secure: $NPM_API_KEY_SECURE
 #    on:
+#      node_js: "8"
 #      tags: true
 #  - provider: gcs
-#    access_key_id: "GCS Interoperable Access Key ID"
-#    secret_access_key: "GCS Interoperable Access Secret"
-#    bucket: "GCS Bucket"
+#    access_key_id: $GCS_ACCESS_KEY_ID
+#    secret_access_key: $GCS_ACCESS_SECRET
+#    bucket: $GCS_BUCKET
 #    skip_cleanup: true
 #    acl: public-read
 #    local-dir: dist
+#    on:
+#      node_js: "8"
+#      branch: master
 
-#jobs:
-#  include:
-#    - stage: npm release
-#      node_js: "7"
-#      script: echo "Deploying to npm ..."
+jobs:
+  include:
+    - stage: npm release
+      node_js: "8"
+      script: echo "Deploying to npm ..."
+      on:
+        node_js: "8"
+        tags: true
+    - stage: GCS release
+      node_js: "8"
+      script: echo "Deploying to GCS ..."
+      on:
+        node_js: "8"
+        branch: master
 #      deploy:
 #        provider: npm
 #        api_key: $NPM_API_KEY

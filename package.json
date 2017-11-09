@@ -23,6 +23,9 @@
     "npm": ">= 3.0.0",
     "yarn": ">= 1.0.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {},
   "devDependencies": {
     "icon-font-generator": "^1.1.1"
