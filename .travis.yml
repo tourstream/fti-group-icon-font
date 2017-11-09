@@ -15,6 +15,9 @@ script:
   - echo "build icon font ..."
   - npm run build
 
+after_success:
+  - npm version patch
+
 #deploy:
 #  - provider: npm
 #    email: npm-account@email.address
