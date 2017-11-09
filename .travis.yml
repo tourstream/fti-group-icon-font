@@ -13,39 +13,50 @@ script:
   - echo "build icon font ..."
   - npm run build
 
-#deploy:
+deploy:
 #  - provider: npm
 #    email: $NPM_EMAIL
 #    api_key:
 #      secure: $NPM_API_KEY_SECURE
 #    on:
-#      node_js: "8"
+#      node: "8"
 #      tags: true
-#  - provider: gcs
-#    access_key_id: $GCS_ACCESS_KEY_ID
-#    secret_access_key: $GCS_ACCESS_SECRET
-#    bucket: $GCS_BUCKET
-#    skip_cleanup: true
-#    acl: public-read
-#    local-dir: dist
-#    on:
-#      node_js: "8"
-#      branch: master
+#      repo: tourstream/fti-group-icon-font
+  - provider: gcs
+    access_key_id: $GCS_ACCESS_KEY_ID
+    secret_access_key: $GCS_ACCESS_SECRET
+    bucket: $GCS_BUCKET
+    skip_cleanup: true
+    acl: public-read
+    local-dir: dist
+    on:
+      node: "8"
+      branch: master
+      repo: tourstream/fti-group-icon-font
 
-jobs:
-  include:
-    - stage: npm release
-      node_js: "8"
-      script: echo "Deploying to npm ..."
-      on:
-        node_js: "8"
-        tags: true
-    - stage: GCS release
-      node_js: "8"
-      script: echo "Deploying to GCS ..."
-      on:
-        node_js: "8"
-        branch: master
+#jobs:
+#  include:
+#    - stage: test
+#      node_js: "8"
+#    - stage: build
+#      node_js: "8"
+#      script: echo "build ..."
+#      script: npm run build
+#    - stage: deploy npm
+#      install: skip # bundle install is not required
+#      node_js: "8"
+#      script: echo "Deploying to npm ..."
+#      script: ls -lat dist
+#      on:
+#        node_js: "8"
+#        tags: true
+#    - stage: deploy gcs
+#      install: skip # bundle install is not required
+#      node_js: "8"
+#      script: echo "Deploying to GCS ..."
+#      on:
+#        node_js: "8"
+#        branch: master
 #      deploy:
 #        provider: npm
 #        api_key: $NPM_API_KEY
