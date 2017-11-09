@@ -16,7 +16,9 @@ Icon font for projects of FTI Group.
 ... following lines are draftinger ...
 
 * as npm lib
-* as CDN link
+* as CDN link: `https://fgif.gcloud.fti-group.com/fti-group-icon-font.css`
+
+This [page](https://fgif.gcloud.fti-group.com/fti-group-icon-font.html) will show the latest version of this package.
 
 
 ### Development
@@ -27,7 +29,7 @@ Icon font for projects of FTI Group.
 * add SVG into folder `src`
 * commit
 
-All next steps will be managed (build, tag, publish) by bamboo.
+All next steps will be managed (build, (tag,) publish) by the build server (travis).
 
 
 #### Rules for SVG
