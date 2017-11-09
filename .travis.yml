@@ -2,19 +2,40 @@ sudo: false
 dist: trusty
 language: node_js
 node_js:
-- '6'
-- '7'
-- '8'
+- "6"
+- "7"
+- "8"
 
 cache:
   yarn: true
   directories:
      - ./node_modules
 
+script:
+  - echo "build icon font ..."
+  - npm run build
+
 #deploy:
-#  provider: npm
-#  email: npm-account@email.address
-#  api_key:
-#    secure: "...encrypted key..."
-#  on:
-#    tags: true
+#  - provider: npm
+#    email: npm-account@email.address
+#    api_key:
+#      secure: "...encrypted key..."
+#    on:
+#      tags: true
+#  - provider: gcs
+#    access_key_id: "GCS Interoperable Access Key ID"
+#    secret_access_key: "GCS Interoperable Access Secret"
+#    bucket: "GCS Bucket"
+#    skip_cleanup: true
+#    acl: public-read
+#    local-dir: dist
+
+#jobs:
+#  include:
+#    - stage: npm release
+#      node_js: "7"
+#      script: echo "Deploying to npm ..."
+#      deploy:
+#        provider: npm
+#        api_key: $NPM_API_KEY
+#        on: deploy-npm-release
