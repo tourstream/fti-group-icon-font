@@ -1,0 +1,7 @@
+node_modules/
+src/
+.editorconfig
+.gitignore
+.npmignore
+package-lock.json
+yarn.lock

@@ -18,6 +18,7 @@ deploy:
     email: $NPM_EMAIL
     api_key:
       secure: $NPM_API_KEY_SECURE
+    skip_cleanup: true
     on:
       node: "8"
       tags: true
