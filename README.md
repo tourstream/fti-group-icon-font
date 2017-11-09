@@ -1,7 +1,7 @@
-[![github tag][github-tag-image]][github-tag-url]
 [![npm version][npm-version-image]][npm-version-url]
 [![npm downloads][npm-downloads-image]][npm-downloads-url]
 [![Build Status][travis-image]][travis-url]
+[![Demo][demo-image]][demo-url]
 [![License][license-image]][license-url]
 
 ***
@@ -44,9 +44,6 @@ Example: file name `hello-world.svg` and CSS usage `<i class="fg-hello-world"></
 
 ***
 
-[github-tag-image]: https://img.shields.io/github/tag/tourstream/fti-group-icon-font.svg?style=flat-square
-[github-tag-url]: https://github.com/tourstream/fti-group-icon-font
-
 [npm-version-image]: https://img.shields.io/npm/v/fti-group-icon-font.svg?style=flat-square
 [npm-version-url]: https://www.npmjs.com/package/@tourstream/fti-group-icon-font
 [npm-downloads-image]: https://img.shields.io/npm/dm/fti-group-icon-font.svg?style=flat-square
@@ -54,6 +51,9 @@ Example: file name `hello-world.svg` and CSS usage `<i class="fg-hello-world"></
 
 [travis-image]: https://img.shields.io/travis/tourstream/fti-group-icon-font.svg?style=flat-square
 [travis-url]: https://travis-ci.org/tourstream/fti-group-icon-font
+
+[demo-image]: https://img.shields.io/badge/Demo-latest-%230099cc.svg
+[demo-url]: https://fgif.gcloud.fti-group.com/fti-group-icon-font.html
 
 [license-image]: https://img.shields.io/github/license/tourstream/fti-group-icon-font.svg?style=flat-square
 [license-url]: https://github.com/tourstream/fti-group-icon-font/blob/master/LICENSE
