@@ -46,13 +46,13 @@ You can put the following snippet into the head of your HTML document ...
 * add SVG into folder `src`
 * commit
 
-The build server (travis) will now update the stuff around the CDN to the latest version automaticcally.
+The build server (travis) will now update the stuff around the CDN to the latest version automatically.
 
 If everything looks good it would help when someone could tag a new version via the following command
 
     npm version minor
     
-The build server (travis) will now update the stuff around the npm package to the tagged version automaticcally.
+The build server (travis) will now update the stuff around the npm package to the tagged version automatically.
 
 
 ## Misc
