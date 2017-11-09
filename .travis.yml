@@ -14,14 +14,14 @@ script:
   - npm run build
 
 deploy:
-#  - provider: npm
-#    email: $NPM_EMAIL
-#    api_key:
-#      secure: $NPM_API_KEY_SECURE
-#    on:
-#      node: "8"
-#      tags: true
-#      repo: tourstream/fti-group-icon-font
+  - provider: npm
+    email: $NPM_EMAIL
+    api_key:
+      secure: $NPM_API_KEY_SECURE
+    on:
+      node: "8"
+      tags: true
+      repo: tourstream/fti-group-icon-font
   - provider: gcs
     access_key_id: $GCS_ACCESS_KEY_ID
     secret_access_key: $GCS_ACCESS_SECRET
@@ -34,30 +34,3 @@ deploy:
       branch: master
       repo: tourstream/fti-group-icon-font
 
-#jobs:
-#  include:
-#    - stage: test
-#      node_js: "8"
-#    - stage: build
-#      node_js: "8"
-#      script: echo "build ..."
-#      script: npm run build
-#    - stage: deploy npm
-#      install: skip # bundle install is not required
-#      node_js: "8"
-#      script: echo "Deploying to npm ..."
-#      script: ls -lat dist
-#      on:
-#        node_js: "8"
-#        tags: true
-#    - stage: deploy gcs
-#      install: skip # bundle install is not required
-#      node_js: "8"
-#      script: echo "Deploying to GCS ..."
-#      on:
-#        node_js: "8"
-#        branch: master
-#      deploy:
-#        provider: npm
-#        api_key: $NPM_API_KEY
-#        on: deploy-npm-release
