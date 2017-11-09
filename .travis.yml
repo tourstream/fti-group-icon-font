@@ -13,11 +13,6 @@ script:
   - echo "build icon font ..."
   - npm run build
 
-before_deploy:
-  - echo 'ready?'
-  - ls -lat
-  - ls -lat dist/
-
 deploy:
   - provider: npm
     skip_cleanup: true
