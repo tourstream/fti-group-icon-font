@@ -78,6 +78,8 @@ package.
 
 ### Requirements for development
 
+* git
+* github account inlc. membership of tourstream organization
 * Node.js >= 8.6.0
 
 ### Rules for SVG file names
