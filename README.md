@@ -8,9 +8,10 @@
 
 # FTI Group Icon Font
 
-Icon font for projects of FTI Group.
+> Icon font for projects of FTI Group.
 
-This [demo page](https://fgif.gcloud.fti-group.com/fti-group-icon-font.html) will show the latest version of this package.
+This [demo page](https://fgif.gcloud.fti-group.com/fti-group-icon-font.html) will show all icons of the latest version 
+of this package.
 
 
 ## Usage
@@ -33,14 +34,21 @@ $ yarn add @tourstream/fti-group-icon-font
 
 After this step you can use the sources as you like. They can be found in `./node_modules/@tourstream/fti-group-icon-font/dist`
 
+📌 **npm include only versioned packages.**
 
-### link the source - CDN
+
+### link the source - CDN at Google Cloud Storage (GCS)
 
 You can put the following snippet into the head of your HTML document ...
 
-    <link rel="stylesheet" href="https://fgif.gcloud.fti-group.com/fti-group-icon-font.css">
+
+```sh
+<link rel="stylesheet" href="https://fgif.gcloud.fti-group.com/fti-group-icon-font.css">
+```
 
 ... or something similar.
+
+📌 **GCS include only the latest version of master branch.**
 
 
 ## Development
@@ -49,26 +57,36 @@ You can put the following snippet into the head of your HTML document ...
 * add SVG into folder `src`
 * commit (incl. short meaningful message)
 
-The build server (travis) will now update the stuff around the CDN to the latest version automatically.
 
-If everything looks good it would help when someone could tag a new version via the following command
+### How to update GCS
+
+This will happen automatically. You have nothing to do.
+
+### How to update npm
+
+To trigger the publish to npm registry you have to call the following command:
 
 ```sh
 $ npm version minor
 ```
  
-The build server (travis) will now update the stuff around the npm package to the tagged version automatically.
+The build server (travis) will now update the version of the package to the next minor version and publish new npm 
+package.
 
 
 ## Misc
 
-### Rules for SVG
+### Requirements for development
+
+* Node.js >= 8.6.0
+
+### Rules for SVG file names
 
 * file name: kebap-case
 * file name: letters only
 * file name: limiter -
 
-This file name will be also the calss name insde of CSS.
+This file name will be also the class name inside of CSS.
 
 Example: file name `hello-world.svg` and CSS usage `<i class="fg-hello-world"></i>`
 
