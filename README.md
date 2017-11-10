@@ -10,7 +10,7 @@
 
 > Icon font for projects of FTI Group.
 
-This [demo page](https://fgif.gcloud.fti-group.com/fti-group-icon-font.html) will show all icons of the latest version 
+This [demo page][demo-url] will show all icons of the latest version 
 of this package.
 
 
@@ -43,12 +43,12 @@ You can put the following snippet into the head of your HTML document ...
 
 
 ```sh
-<link rel="stylesheet" href="https://fgif.gcloud.fti-group.com/fti-group-icon-font.css">
+<link rel="stylesheet" href="https://assets.gcloud.fti-group.com/fti-group-icon-font/latest/fti-group-icon-font.css">
 ```
 
 ... or something similar.
 
-📌 **GCS include only the latest version of master branch.**
+📌 **GCS include versioned packages and the latest version of master branch.**
 
 
 ## Development
@@ -101,7 +101,7 @@ Example: file name `hello-world.svg` and CSS usage `<i class="fg-hello-world"></
 [travis-url]: https://travis-ci.org/tourstream/fti-group-icon-font
 
 [demo-image]: https://img.shields.io/badge/Demo-latest-%230099cc.svg?style=flat-square
-[demo-url]: https://fgif.gcloud.fti-group.com/fti-group-icon-font.html
+[demo-url]: https://assets.gcloud.fti-group.com/fti-group-icon-font/latest/fti-group-icon-font.html
 
 [license-image]: https://img.shields.io/github/license/tourstream/fti-group-icon-font.svg?style=flat-square
 [license-url]: https://github.com/tourstream/fti-group-icon-font/blob/master/LICENSE

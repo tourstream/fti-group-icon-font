@@ -23,28 +23,28 @@ deploy:
       node: "8"
       tags: true
       repo: tourstream/fti-group-icon-font
-  - provider: gcs
-    skip_cleanup: true
-    access_key_id: $GCS_ACCESS_KEY_ID
-    secret_access_key: $GCS_ACCESS_SECRET
-    bucket: $GCS_BUCKET
-    acl: public-read
-    local-dir: dist
-    on:
-      node: "8"
-      branch: master
-      repo: tourstream/fti-group-icon-font
 #  - provider: gcs
 #    skip_cleanup: true
 #    access_key_id: $GCS_ACCESS_KEY_ID
 #    secret_access_key: $GCS_ACCESS_SECRET
 #    bucket: $GCS_BUCKET
 #    acl: public-read
-#    local-dir: dist-master
+#    local-dir: dist
 #    on:
 #      node: "8"
 #      branch: master
 #      repo: tourstream/fti-group-icon-font
+  - provider: gcs
+    skip_cleanup: true
+    access_key_id: $GCS_ACCESS_KEY_ID
+    secret_access_key: $GCS_ACCESS_SECRET
+    bucket: $GCS_BUCKET
+    acl: public-read
+    local-dir: dist-master
+    on:
+      node: "8"
+      branch: master
+      repo: tourstream/fti-group-icon-font
   - provider: gcs
     skip_cleanup: true
     access_key_id: $GCS_ACCESS_KEY_ID

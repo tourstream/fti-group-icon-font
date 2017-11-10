@@ -60,8 +60,8 @@ var mkdirSyncRecursive = function(directory) {
 
 // preparation
 var versionString = pckg.version;
-var distGcsVersion = 'dist-version/' + versionString;
-var distGcsMaster = 'dist-master/latest';
+var distGcsVersion = 'dist-version/fti-group-icon-font/' + versionString;
+var distGcsMaster = 'dist-master/fti-group-icon-font/latest';
 
 // action
 copy('dist', distGcsVersion);
