@@ -32,7 +32,7 @@
   },
   "scripts": {
     "prebuild": "mkdir -p dist",
-    "build": "icon-font-generator src/*.svg -o dist/ -j false -n fti-group-icon-font -p fg --htmltp template/html.hbs",
+    "build": "icon-font-generator src/*.svg -o dist/ -j false -n fti-group-icon-font -p fg --htmltp template/html.hbs --csstp template/css.hbs",
     "postbuild": "node prepare-gcs.js",
     "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified - but this is fine for now\" && exit 0"
