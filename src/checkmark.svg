@@ -4,6 +4,5 @@
   </defs>
   <g fill="none" fill-rule="evenodd">
     <use fill="#000" fill-rule="nonzero" xlink:href="#checkmark-a"/>
-    <rect width="50" height="50" fill="#000"/>
   </g>
 </svg>
