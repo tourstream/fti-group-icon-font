@@ -28,12 +28,13 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "clean-css-cli": "^4.1.10",
     "icon-font-generator": "^1.1.1"
   },
   "scripts": {
     "prebuild": "mkdir -p dist",
     "build": "icon-font-generator src/*.svg -o dist/ -j false -n fti-group-icon-font -p fg --htmltp template/html.hbs --csstp template/css.hbs",
-    "postbuild": "node prepare-gcs.js",
+    "postbuild": "cleancss -o dist/fti-group-icon-font.min.css dist/fti-group-icon-font.css && node prepare-gcs.js",
     "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified - but this is fine for now\" && exit 0"
   }
