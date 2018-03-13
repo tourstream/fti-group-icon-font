@@ -4,14 +4,21 @@
 }
 
 {{ baseTag }}[class*="{{classPrefix}}"] {
-    line-height: 1;
+    display: inline-block;
+    font: normal normal normal 14px/1 {{fontName}};
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* next line adjust the position */
+    vertical-align: text-top;
+    line-height: 1.1;
 }
 
 {{ baseTag }}[class*="{{classPrefix}}"]:before {
-    font-family: {{fontName}} !important;
-    font-style: normal;
-    font-weight: normal !important;
-    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 {{# each codepoints }}

@@ -28,7 +28,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "clean-css-cli": "^4.1.10",
+    "clean-css-cli": "^4.1.11",
     "icon-font-generator": "^1.1.1"
   },
   "scripts": {
