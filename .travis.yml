@@ -18,7 +18,7 @@ deploy:
     skip_cleanup: true
     email: $NPM_EMAIL
     api_key:
-      secure: Xr4TYHAeGaaJ4tXjHWOHX5tgnM77x7P7XxNOWwzNw8zzQkaWl1cz/BekWctdSVw/PuKB/ounbnM1wF3Hp5zWvSvM8YW0mjmg5fyQ5U1gcoOFACyLA2xc3NCR9qtqBU5UuYwhWfDyxfuIHENHDYIRVa6zq2EibJKJ+0K6LAQMGuCNknXf6UZy8KCG1a/fASDA/Hgj818hlTojLYXWq3oBAPWrHlLiX1sRCNO4hBVg3i7Mw/mNwF6huYIuxyYJvdBgrXUNU/tsQEFs/Sn7L+6qGpmHd3inSMQxStO0jlY1C6iPRj8yOOWIz+VQoRvod0XjEB4sm++fqJt7r1SUiKxOKeiWn7F+gvHAlvPtjYbn/23YssBzWJEtKm+EQ+picf8ShNKcV33IlZ1R7WGidHtxIZSz1vGasUHt4/gUEGVIrTyEWTRCWSMNPOy2tl5FlUkeA5ank6ZEznVOirj//LhWAZdjz26QJ+4+tImlDoq0ZTqQ5uRkZeDEHmVWbR9y0RzNwtAy97/I8eqY1OifaM5A8oOIoVMDfaI4uQdrv49QRObLY49U1P+i+hetj1OC9rdApU6PSSXT5DaoKor0h3CcYlDYxTw6JVzRpwOgN+HCiRb/3qnXryVgH9VTLBRrQEi4lg/fJzcv1R78g/onWKHQLPuGDpmUzmcG8gS+w/cv7GM=
+      secure: $NPM_TOURSTREAM-EU_TOKEN
     on:
       node: "8"
       tags: true
