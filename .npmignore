@@ -6,6 +6,5 @@ template/
 .gitignore
 .npmignore
 .travis.yml
-package-lock.json
 prepare-gcs.js
 yarn.lock
