@@ -62,3 +62,4 @@ typings/
 # own stuff
 dist/
 dist-*/
+.idea/
