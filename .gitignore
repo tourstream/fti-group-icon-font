@@ -66,4 +66,6 @@ typings/
 # own stuff
 dist/
 dist-*/
+
+# Jetbrains
 .idea/
