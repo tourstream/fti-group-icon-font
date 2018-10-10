@@ -59,6 +59,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# misc
+.DS_Store
+
 # own stuff
 dist/
 dist-*/
