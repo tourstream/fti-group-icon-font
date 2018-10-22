@@ -50,6 +50,8 @@ You can put the following snippet into the head of your HTML document ...
 
 📌 **GCS include versioned packages and the latest version of master branch.**
 
+## Using the same width for all icons
+Include the following css class in the element: `fg-fw`.
 
 ## Development
 
