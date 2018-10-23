@@ -29,7 +29,7 @@
   "dependencies": {},
   "devDependencies": {
     "clean-css-cli": "^4.1.11",
-    "icon-font-generator": "^1.1.1"
+    "icon-font-generator": "^2.1.8"
   },
   "scripts": {
     "prebuild": "mkdir -p dist",
