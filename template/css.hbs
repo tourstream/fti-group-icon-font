@@ -21,11 +21,6 @@
     box-sizing: border-box;
 }
 
-.{{ classPrefix }}fw{
-    text-align: center;
-    width: 1.25em;
-}
-
 {{# each codepoints }}
 .{{ ../classPrefix }}{{ @key }}:before {
     content: "\\{{ this }}";
