@@ -21,7 +21,7 @@ There are different ways to use this font ...
 ### npm package
 
 If you want to use the npm package just install with [npm](https://www.npmjs.com/)
-                                                
+
 ```sh
 $ npm install @tourstream/fti-group-icon-font --save
 ```
@@ -71,7 +71,7 @@ To trigger the publish to npm registry you have to call the following command:
 ```sh
 $ npm version minor
 ```
- 
+
 The build server (travis) will now update the version of the package to the next minor version and publish new npm 
 package.
 
@@ -81,7 +81,7 @@ package.
 ### Requirements for development
 
 * git
-* github account inlc. membership of tourstream organization
+* github account incl. membership of tourstream organization
 * Node.js >= 8.6.0
 
 ### Rules for SVG file names
