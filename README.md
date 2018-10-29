@@ -21,7 +21,7 @@ There are different ways to use this font ...
 ### npm package
 
 If you want to use the npm package just install with [npm](https://www.npmjs.com/)
-                                                
+
 ```sh
 $ npm install @tourstream/fti-group-icon-font --save
 ```
@@ -50,9 +50,6 @@ You can put the following snippet into the head of your HTML document ...
 
 📌 **GCS include versioned packages and the latest version of master branch.**
 
-## Using the same width for all icons
-Include the following css class in the element: `fg-fw`.
-
 ## Development
 
 * checkout/update repository
@@ -71,7 +68,7 @@ To trigger the publish to npm registry you have to call the following command:
 ```sh
 $ npm version minor
 ```
- 
+
 The build server (travis) will now update the version of the package to the next minor version and publish new npm 
 package.
 
@@ -81,7 +78,7 @@ package.
 ### Requirements for development
 
 * git
-* github account inlc. membership of tourstream organization
+* github account incl. membership of tourstream organization
 * Node.js >= 8.6.0
 
 ### Rules for SVG file names
