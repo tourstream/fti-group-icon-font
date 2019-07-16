@@ -54,6 +54,7 @@ You can put the following snippet into the head of your HTML document ...
 
 * checkout/update repository
 * add SVG into folder `src`
+* run the following command `npm run build`
 * commit (incl. short meaningful message)
 
 
