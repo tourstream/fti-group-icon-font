@@ -57,6 +57,13 @@ You can put the following snippet into the head of your HTML document ...
 * run the following command `npm run build`
 * commit (incl. short meaningful message)
 
+##Deployment
+
+Staging
+
+For feature branch deployment use Bamboo (Plan: FTI Group Icon Font). 
+A branch is available on Bamboo after the branch is created on Github. 
+`https://storage.googleapis.com/asset-store/fti-group-icon-font/staging/<BRANCH-NAME>/fti-group-icon-font.html`
 
 ### How to update GCS
 
